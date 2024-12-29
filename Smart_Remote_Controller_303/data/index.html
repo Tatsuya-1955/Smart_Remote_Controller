@@ -1,0 +1,81 @@
+<!-- 20241209 Ver.303-->
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <style>p{ text-align:center; }</style>
+    <link rel="stylesheet" href="./style.css">
+    <script src="js.js"></script>
+  </head>
+  <body>
+    <!-- 内部変数を使用してサーバーで取得した現在時刻をクライアント画面に表示する -->
+    <p><td><span id="curtime" class="value">%CURTIME%</span></td></tr></p>
+    <!-- 内部変数を使用してサーバーで作成した文字列をクライアント画面に表示する　-->
+    <p id="msg_information" class="value">%MSG_INFORMATION%</p>
+      
+    <!-- グループ名ラベルとボタン群の定義 -->
+    <p>TV</p>
+    <div class="inline_1">
+      <button class='bt_1' onclick='bt_1Clicked(this)' id='bt_1'>電源</button>     
+      <button class='bt_2' onclick='bt_2Clicked(this)' id='bt_2'>入力</button>
+      <button class='bt_3' onclick='bt_3Clicked(this)' id='bt_3'>消音</button>
+      <button class='bt_4' onclick='bt_4Clicked(this)' id='bt_4'></button>
+    </div>
+    <br>
+    <div class="inline_2">
+      <button class='bt_5' onclick='bt_5Clicked(this)' id='bt_5'>CH+</button>     
+      <button class='bt_6' onclick='bt_6Clicked(this)' id='bt_6'>地上</button>
+      <button class='bt_7' onclick='bt_7Clicked(this)' id='bt_7'>Vol+</button>
+      <button class='bt_8' onclick='bt_8Clicked(this)' id='bt_8'></button>
+    </div>
+    <br>
+    <div class="inline_3">
+      <button class='bt_9' onclick='bt_9Clicked(this)' id='bt_9'>CHｰ</button>     
+      <button class='bt_10' onclick='bt_10Clicked(this)' id='bt_10'>BS</button>
+      <button class='bt_11' onclick='bt_11Clicked(this)' id='bt_11'>Vol-</button>
+      <button class='bt_12' onclick='bt_12Clicked(this)' id='bt_12'></button>
+    </div>
+    <p>BOSE</p>
+    <div class="inline_4">
+      <button class='bt_13' onclick='bt_13Clicked(this)' id='bt_13'>On</button>     
+      <button class='bt_14' onclick='bt_14Clicked(this)' id='bt_14'>Off</button>
+      <button class='bt_15' onclick='bt_15Clicked(this)' id='bt_15'>Vol+</button>
+      <button class='bt_16' onclick='bt_16Clicked(this)' id='bt_16'>Vol-</button>
+    </div>   
+    <br>
+
+    <!-- ボタンを追加する場合、
+    
+    <p>ここにグループ名を入力</p>
+    <div class="inline_X">
+      <button class='bt_13' onclick='bt_13Clicked(this)' id='bt_13'>On</button>     
+      <button class='bt_14' onclick='bt_14Clicked(this)' id='bt_14'>Off</button>
+      <button class='bt_15' onclick='bt_15Clicked(this)' id='bt_15'>Vol+</button>
+      <button class='bt_16' onclick='bt_16Clicked(this)' id='bt_16'>Vol-</button>
+    </div>
+        
+    -->
+    <!-- モード切換ボタンの定義（ ボタンの輪郭は消しているので文字だけに見える）-->
+    <div class="bt_mode">
+      <input type="checkbox" id="bt_mode" name="bt_mode"onclick="bt_modeClick();">
+      <label id="bt_mode_label" for="bt_mode">Smart Remote Controller</label>
+    </div>
+    <!-- 制御ボタン群の定義 -->
+    <div class="inline_c">
+      <div class="bt_c1">
+        <input type="checkbox" id="bt_c1" name="bt_c1"onclick="bt_c1Click();">
+        <label id= "bt_c1_label" for="bt_c1">取込</label>
+      </div>
+      <div class="bt_c2">
+        <input type="checkbox" id="bt_c2" name="bt_c2"onclick="bt_c2Click();">
+        <label id= "bt_c2_label" for="bt_c2">登録</label>
+      </div>
+      <button class='bt_c3' onclick='bt_c3Clicked(this)' id='bt_c3'>終了</button>
+      <div class="bt_c4">
+        <input type="checkbox" id="bt_c4" name="bt_c4"onclick="bt_c4Click();">
+        <label id= "bt_c4_label" for="bt_c4">予備</label>
+      </div>
+    </div>
+  </body>
+</html>

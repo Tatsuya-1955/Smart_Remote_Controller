@@ -1,0 +1,193 @@
+/* 20241209 Ver.303
+/* sstyle.css       */
+
+@charset "utf-8";
+
+/* 画面サイズが1080px以下の場合、この記述が適用される */
+@media screen and (max-width:1080px){ main{ width: 100%; } }
+
+html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;} 
+h1 { font-size:28px;}
+body { text-align: center; background-color: aliceblue; /*20240729*/ } 
+table { border-collapse: collapse; margin-left:auto; margin-right:auto;}
+th { padding: 12px; background-color: #0000cd; color: white; border: solid 2px #c0c0c0;}
+tr { border: solid 2px #c0c0c0; padding: 12px;}
+td { border: solid 2px #c0c0c0; padding: 12px;}
+
+.value { color:blue; font-weight: bold; padding: 1px;}
+
+/* (1)情報表示窓 */
+#msg_information{ white-space: break-spaces; max-width: 480px; margin-left:auto; margin-right:auto;
+  font-size: 100%; text-align:left; border: 1px splid silver; padding: 1em;
+  background-color:rgb(216, 216, 216); color: black;
+}
+
+/* (2)リモコン送信ボタン */
+/* inline_1 */
+.inline_1 {display: flex; justify-content: center; gap: 20px;}
+
+.bt_1 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(215,228,189); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_1:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+.bt_2 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(215,228,189); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_2:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+.bt_3 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(215,228,189); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_3:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+.bt_4 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(215,228,189); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_4:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+
+/* inline_2 */
+.inline_2 {display: flex; justify-content: center; gap: 20px;}
+
+.bt_5 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(215,228,189); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_5:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+.bt_6 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(215,228,189); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_6:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+.bt_7 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(215,228,189); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_7:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+.bt_8 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(215,228,189); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_8:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+
+/* inline_3 */
+.inline_3{display: flex; justify-content: center; gap: 20px;}
+
+.bt_9 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(215,228,189); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_9:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+.bt_10 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(215,228,189); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_10:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+.bt_11 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(215,228,189); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_11:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+.bt_12 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(215,228,189); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_12:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+
+/* inline_4 */
+.inline_4 {display: flex; justify-content: center; gap: 20px;}
+
+.bt_13 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(204,192,218); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_13:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+.bt_14 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(204,192,218); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_14:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+.bt_15 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(204,192,218); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_15:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+.bt_16 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:rgb(204,192,218); color: #000;
+  border-bottom: solid 5px #627295; border-radius: 4px;}
+.bt_16:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+
+/* (3)モード切換ボタン */
+.bt_mode {display: inline-block; height:43px;}
+.bt_mode label{display: block; background:aliceblue; color: blue;
+  padding: 8px; margin: 0 auto; box-sizing: border-box; text-align: center;
+  text-decoration: none;  cursor: pointer;}
+.bt_mode input:checked+label{background:aliceblue; color: red;}
+.bt_mode input{display: none;}
+
+/* (4)制御ボタン ボタンの初期状態を背景色と同一(見えない状態)に設定する */
+/* inline_c */
+.inline_c {display: flex; justify-content: center; gap: 20px;}
+
+.bt_c1 {display: inline-block; width:100px; height:43px;}
+.bt_c1 label{display: block; background:aliceblue; color: aliceblue;
+  padding: 8px; margin: 0 auto; box-sizing: border-box; text-align: center;
+  text-decoration: none; border-bottom: solid;  border-radius: 5px; cursor: pointer;}
+.bt_c1 input:checked+label{background:tomato; color: white;}
+.bt_c1 input{display: none;}
+
+.bt_c2 {display: inline-block; width: 100px; height:43px;}
+.bt_c2 label{display: block; background:aliceblue;  color: aliceblue;
+  padding: 8px; margin: 0 auto; box-sizing: border-box; text-align: center;
+  text-decoration: none; border-bottom: solid; border-radius: 5px; cursor: pointer;}
+.bt_c2 input:checked+label{background:tomato; color: white;}
+.bt_c2 input{display: none;}
+
+.bt_c3 {
+  display:inline-block; width:100px; height:43px; padding:10px 10px; vertical-align: middle;
+  text-decoration:none; font-size:16px; background-color:aliceblue; color: aliceblue;
+  border:none; border-bottom: solid ; border-radius: 5px;}
+.bt_c3:active {
+  -webkit-transform: translateY(0px); transform: translateY(0px); border-bottom: none;
+}
+
+.bt_c4 {display: inline-block; width: 100px; height:43px;}
+.bt_c4 label{display: block; background:aliceblue;  color: aliceblue;
+  padding: 8px; margin: 0 auto; box-sizing: border-box; text-align: center;
+  text-decoration: none; border-bottom: solid; border-radius: 5px; cursor: pointer;}
+.bt_c4 input:checked+label{background:tomato; color: white;}
+.bt_c4 input{display: none;}
