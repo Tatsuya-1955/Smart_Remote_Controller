@@ -12,5 +12,5 @@ ESP32を使って学習リモコンを作ります。
 3. 赤外線リモコン信号送信回路
 
 （ソフトウエア言語）
-　本体・・・C++
-　Webブラウザ・・・HTML、 JavaScript、 CSS
+1. 本体・・・C++
+2. Webブラウザ・・・HTML、 JavaScript、 CSS
